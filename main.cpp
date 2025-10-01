@@ -10,12 +10,14 @@ class Color
 {
     //Public Getters, Setters, and print
     public:
-    int getRed() {return red;}
-    int getBlue() {return blue;}
-    int getGreen() {return green;}
-    void setRed(int r) {red = r;}
-    void setBlue(int b) {blue = b;}
-    void setGreen(int g) {green = g;}
+    const int getRed() {return red;} // Returns the value of red
+    const int getBlue() {return blue;} // Returns the value of blue
+    const int getGreen() {return green;} // Returns the value of green
+    void setRed(int r) {red = r;} // Sets the value of red
+    void setBlue(int b) {blue = b;} // Sets the value of blue
+    void setGreen(int g) {green = g;} // Sets the value of green
+
+    //Print function to print the values of rgb
     void print()
     {
         cout << "Green: " << green << " ";
@@ -24,7 +26,7 @@ class Color
         cout << " \n";
     }
 
-    //Defualt constructor
+    //Defualt constructor.
     Color()
     {
         red = 0;
@@ -32,7 +34,7 @@ class Color
         green = 0;
     }
 
-    //Paremeterized constructor
+    //Paremeterized constructor. Takes in arguments for rgb
     Color(int r, int b, int g)
     {
         red = r;
@@ -40,7 +42,7 @@ class Color
         green = g;
     }
 
-    //Partial constructor
+    //Partial constructor. Takes in arguments for b and g. Sets r to 40
     Color(int b, int g)
     {
         red = 40;
