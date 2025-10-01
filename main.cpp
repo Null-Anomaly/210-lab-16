@@ -24,6 +24,31 @@ class Color
         cout << " \n";
     }
 
+    //Defualt constructor
+    Color()
+    {
+        red = 0;
+        blue = 0;
+        green = 0;
+    }
+
+    //Paremeterized constructor
+    Color(int r, int b, int g)
+    {
+        red = r;
+        blue = b;
+        green = g;
+    }
+
+    //Partial constructor
+    Color(int b, int g)
+    {
+        red = 40;
+        blue = b;
+        green = g;
+    }
+
+
     //Private values of red, blue, and green
     private:
     int green;
@@ -35,11 +60,11 @@ class Color
 //Program main
 int main()
 {
-    Color one;
-    Color two;
-    Color three;
-    Color four;
-    Color five;
+    Color one;//using default constructor
+    Color two(100, 150); //using partial constructor
+    Color three(30, 10, 233); //using parameterized constructor
+    Color four;//using default constructor
+    Color five(43,193); //using partial constructor
 
     //Object one
     one.setBlue(10);
