@@ -48,7 +48,6 @@ class Color
         green = g;
     }
 
-
     //Private values of red, blue, and green
     private:
     int green;
@@ -82,7 +81,7 @@ int main()
     five.setGreen(198);
     five.setRed(74);
 
-    //print statements
+    //print statements 
     one.print();
     two.print();
     three.print();
