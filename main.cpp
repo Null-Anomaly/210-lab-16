@@ -71,20 +71,11 @@ int main()
     one.setGreen(29);
     one.setRed(199);
 
-    //object two
-    two.setBlue(200);
-    two.setGreen(119);
-    two.setRed(24);
+    //object two now using partial constructor
 
-    //object three
-    three.setBlue(43);
-    three.setGreen(189);
-    three.setRed(203);
+    //object three now using parameterized constructor
 
-    //object four
-    four.setBlue(255);
-    four.setGreen(249);
-    four.setRed(255);
+    //object four now using default constructor
 
     //object five
     five.setBlue(245);
